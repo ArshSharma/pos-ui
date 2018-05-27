@@ -1,0 +1,7 @@
+<form [formGroup]="customerForm" (ngSubmit)="addCustomer()" novalidate>
+  <div *ngIf="validMessage !=''">{{validMessage}}</div>
+  <input type="text" class="form-control" formControlName="name" required autofocus>
+  <input type="email" class="form-control" formControlName="email" required>
+  <input type="number" class="form-control" formControlName="number" required>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

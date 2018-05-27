@@ -1,0 +1,7 @@
+{
+    "/server":{
+        "target":"http://localhost:2040",
+        "secure":false
+       
+    }
+}

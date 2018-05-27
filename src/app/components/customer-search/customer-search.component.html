@@ -1,0 +1,20 @@
+<input type='text' [(ngModel)]='listFilters' >
+
+
+<table class="table table-condensed" *ngIf='customers && customers.length'>
+ 
+  <tbody >
+    <div *ngFor='let customer of customers'>
+      <tr>
+        <td>{{customer.id}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.number}}</td>
+      </tr>
+    </div>
+  </tbody>
+</table>
+
+
+
+
