@@ -1,2 +1,8 @@
+<div *ngIf="drawerDetails">
+    Today's Opening balance was :{{drawerDetails.openingBalance}}
+    Last Closing balance was: {{drawerDetails.closingBalance}}
+</div>
+<div *ngIf="!drawerDetails">
 <input type='text' [(ngModel)]='openingDrawer' >
 <button (click)="addToDrawer()">Submit</button>
+</div>

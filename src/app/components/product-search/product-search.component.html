@@ -1,0 +1,44 @@
+<input class="form-control input-lg " type='text' [(ngModel)]='productFilter' placeholder="Search Products">
+<hr>
+
+
+<!-- <table class="table table-condensed" *ngIf='products && products.length'>
+ 
+  <tbody >
+    <div *ngFor='let product of products'>
+      <tr>
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.description}}</td>
+      </tr>
+    </div>
+  </tbody>
+</table> -->
+<div *ngIf='products && products.length'>
+  <div class="row">
+    <div *ngFor='let product of products'>
+      <div class="col-sm-12">
+<mat-card class="example-card">
+  <mat-card-header>
+    
+    <mat-card-title><b>{{product.name}}</b></mat-card-title>
+    <mat-card-subtitle>Price: Rs.{{product.price}}</mat-card-subtitle>
+  </mat-card-header>
+  <hr>
+  <mat-card-content>
+    <p>
+      {{product.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button class="btn-primary">ADD</button>
+    
+  </mat-card-actions>
+</mat-card>
+
+</div>
+<hr>
+</div>
+</div>
+</div>

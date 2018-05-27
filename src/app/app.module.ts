@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http'
 import { CustomerService } from './services/customer.service'
+import { ProductsService } from './services/products.service'
 import { EmployeeService } from './services/employee.service'
 import { DrawerService } from './services/drawer.service'
 import { DataService } from './services/data.service'
@@ -14,6 +15,9 @@ import { CustomerSearchComponent } from './components/customer-search/customer-s
 import { CustomerAddComponent } from './components/customer-add/customer-add.component';
 import { LoginEmployeeComponent } from './components/login-employee/login-employee.component';
 import { DrawerOpenComponent } from './components/drawer-open/drawer-open.component';
+import { ProductSearchComponent } from './components/product-search/product-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 
 @NgModule({
@@ -22,16 +26,19 @@ import { DrawerOpenComponent } from './components/drawer-open/drawer-open.compon
     CustomerSearchComponent,
     CustomerAddComponent,
     LoginEmployeeComponent,
-    DrawerOpenComponent
+    DrawerOpenComponent,
+    ProductSearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
-  providers: [CustomerService,EmployeeService,DataService,DrawerService],
+  providers: [CustomerService,EmployeeService,DataService,DrawerService,ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

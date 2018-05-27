@@ -4,6 +4,7 @@ import {CustomerSearchComponent} from './components/customer-search/customer-sea
 import {CustomerAddComponent} from './components/customer-add/customer-add.component';
 import { LoginEmployeeComponent } from './components/login-employee/login-employee.component';
 import { DrawerOpenComponent } from './components/drawer-open/drawer-open.component';
+import { ProductSearchComponent } from './components/product-search/product-search.component';
 const routes: Routes = [
   {
     path: 'customers',
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'drawer',
     component: DrawerOpenComponent 
+  },
+  {
+    path: 'products',
+    component: ProductSearchComponent
   }
 
 ];

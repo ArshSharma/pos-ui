@@ -19,7 +19,7 @@ export class DrawerService {
     return this.http.get(this.url+'employee/'+id +"/drawer",)
   }
   setOpeningDrawer(id : number, drawer){
-    let body= "{ 'openingBalance' : " + drawer +"}"
+    let body= '{ "openingBalance" : ' + drawer +'}'
     console.log(body);
     return this.http.post(this.url+'employee/'+id +"/drawer", body, httpOptions)
   }

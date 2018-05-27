@@ -8,7 +8,7 @@ import {CustomerService} from '../../services/customer.service'
   styleUrls: ['./customer-search.component.css']
 })
 export class CustomerSearchComponent implements OnInit {
-  test=true
+  
   public customers;
   _listFilters : string;
 
